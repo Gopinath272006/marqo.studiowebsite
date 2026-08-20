@@ -162,9 +162,9 @@ function MediaVisual({ project, tall = false }: { project: Project; tall?: boole
     return (
       <div className="media-visual h-full w-full overflow-hidden group relative" style={{ background: project.color, color: project.ink }}>
         <video ref={videoRef} src={project.videoUrl} loop muted playsInline className="absolute inset-0 h-full w-full object-cover" />
-        
+
         <div className={`absolute inset-0 flex items-center justify-center bg-black/20 z-20 transition-opacity duration-300 ${playing ? 'opacity-0 hover:opacity-100' : 'opacity-100'}`}>
-          <button 
+          <button
             onClick={togglePlay}
             className="flex h-16 w-16 items-center justify-center rounded-full bg-white/20 backdrop-blur-md border border-white/40 text-white hover:bg-white/30 hover:scale-105 transition-all"
             aria-label={playing ? "Pause video" : "Play video"}
@@ -269,9 +269,8 @@ function Shell({ children }: { children: ReactNode }) {
 
         {/* Action items — slide up when open */}
         <div
-          className={`flex flex-col items-end gap-2 transition-all duration-300 ${
-            bookOpen ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 translate-y-4 pointer-events-none'
-          }`}
+          className={`flex flex-col items-end gap-2 transition-all duration-300 ${bookOpen ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 translate-y-4 pointer-events-none'
+            }`}
         >
           {/* WhatsApp */}
           <a
@@ -283,8 +282,8 @@ function Shell({ children }: { children: ReactNode }) {
             <span className="font-mono-marqo text-[10px] uppercase tracking-[.12em] text-[#1E45FB] whitespace-nowrap">WhatsApp</span>
             <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#25D366] text-white">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
-                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
-                <path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.557 4.126 1.532 5.86L.054 23.25a.75.75 0 0 0 .916.916l5.39-1.478A11.952 11.952 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.69-.5-5.23-1.375l-.374-.214-3.876 1.063 1.063-3.876-.214-.374A9.952 9.952 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+                <path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.557 4.126 1.532 5.86L.054 23.25a.75.75 0 0 0 .916.916l5.39-1.478A11.952 11.952 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.69-.5-5.23-1.375l-.374-.214-3.876 1.063 1.063-3.876-.214-.374A9.952 9.952 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z" />
               </svg>
             </span>
           </a>
@@ -318,11 +317,10 @@ function Shell({ children }: { children: ReactNode }) {
           onClick={() => setBookOpen((v) => !v)}
           data-testid="button-floating-book-now"
           aria-label="Book Now"
-          className={`flex items-center gap-3 rounded-full px-5 py-4 font-mono-marqo text-[10px] uppercase tracking-[.14em] shadow-[0_8px_32px_rgba(30,69,251,0.35)] transition-all duration-300 active:scale-95 ${
-            bookOpen
+          className={`flex items-center gap-3 rounded-full px-5 py-4 font-mono-marqo text-[10px] uppercase tracking-[.14em] shadow-[0_8px_32px_rgba(30,69,251,0.35)] transition-all duration-300 active:scale-95 ${bookOpen
               ? 'bg-[#f3f0e9] text-[#1E45FB] shadow-[0_4px_16px_rgba(0,0,0,0.12)]'
               : 'bg-[#1E45FB] text-[#CDF22B] hover:bg-[#CDF22B] hover:text-[#1E45FB] hover:shadow-[0_12px_40px_rgba(205,242,43,0.4)]'
-          }`}
+            }`}
         >
           <span className={`transition-transform duration-300 ${bookOpen ? 'rotate-45' : ''}`}>
             <Plus size={16} />
@@ -418,14 +416,14 @@ function Home() {
             </h1>
 
             <div className="page-reveal stagger-1 mt-8 flex flex-col gap-4 w-full sm:w-[360px] relative z-30">
-              <button 
+              <button
                 onClick={() => setIsDropdownOpen(!isDropdownOpen)}
                 className="flex items-center justify-between w-full bg-[#1E45FB] text-white px-8 py-4 rounded-full font-display font-medium text-lg hover:bg-[#1E45FB]/90 transition-all shadow-lg shadow-[#1E45FB]/20 border border-[#1E45FB]"
               >
                 <span className="flex-1 text-center pl-6">Start Your Project</span>
                 <ChevronDown size={20} className={`transition-transform duration-200 ${isDropdownOpen ? 'rotate-180' : ''}`} />
               </button>
-              
+
               {isDropdownOpen && (
                 <div className="absolute top-[76px] left-0 w-full bg-white rounded-3xl shadow-2xl border border-[#1E45FB]/10 p-2 animate-in fade-in slide-in-from-top-2">
                   <a href="mailto:marqostudioss@gmail.com" className="flex items-center gap-4 p-4 hover:bg-[#f3f0e9] rounded-2xl transition-colors">
@@ -449,8 +447,8 @@ function Home() {
                 </div>
               )}
 
-              <Link 
-                href="/work" 
+              <Link
+                href="/work"
                 className="flex items-center justify-center gap-2 w-full border border-[#1E45FB]/20 text-[#1E45FB] px-8 py-4 rounded-full font-display font-medium text-lg hover:border-[#1E45FB] hover:bg-[#1E45FB]/5 transition-all"
               >
                 <PlayCircle size={20} className="text-[#1E45FB] fill-transparent" strokeWidth={1.5} />
