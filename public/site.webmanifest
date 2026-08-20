@@ -1,0 +1,21 @@
+{
+  "name": "MARQO | Motion Design Studio",
+  "short_name": "MARQO",
+  "description": "Independent motion design studio based in Ivory Coast.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#15223b",
+  "theme_color": "#D4FF3D",
+  "icons": [
+    {
+      "src": "/PHOTO-2026-08-11-18-36-50-removebg-preview.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/PHOTO-2026-08-11-18-36-50-removebg-preview.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
